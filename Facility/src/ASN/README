@@ -1,0 +1,1 @@
+/home/user/work/normal/asnic/asn1c-0.9.28/install/bin/asn1c -S /home/user/work/normal/asnic/asn1c-0.9.28/skeletons -gen-PER -pdu=auto *.ASN
