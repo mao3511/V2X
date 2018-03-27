@@ -27,9 +27,9 @@ typedef MapData_t tMapData;
 
 typedef MinuteOfTheYear_t tMinuteOfTheYear;    
 
-eMapMsgRetError Map_Create(tMapData **ppMap, eMsgCreateOpt opt);
+eMapMsgRetError Map_Create(tMapData **ppMap);
 
-eMapMsgRetError Map_Free(tMapData *pMap, eMsgFreeOpt opt);
+eMapMsgRetError Map_Free(tMapData *pMap);
 
 eMapMsgRetError Map_SetTimeStamp(tMapData *pMap, tMinuteOfTheYear minute_year);
 

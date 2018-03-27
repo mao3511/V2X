@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 project(ads_library)
 
-include_directories(../src/ASN/ ../src/ADS/message ../src/ADS/common/)
+include_directories(../src/ASN/ ../src/ADS/message ../src/ADS/common/ ../src/ADS/log/)
 
 link_directories(../output/)
 
@@ -12,7 +12,11 @@ set(CMAKE_C_COMPILER gcc)
 aux_source_directory(../src/ASN/ SRC_ASN1)
 
 set(SOURCES_FILES ${SRC_ASN1}
+                ../src/ADS/log/base_log.c
 				../src/ADS/message/bsm_wrapper.c
+                ../src/ADS/message/rsi_wrapper.c
+                ../src/ADS/message/rsm_wrapper.c 
+                ../src/ADS/message/spat_wrapper.c
                 ../src/ADS/message/map_wrapper.c)
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../output/)
